@@ -86,7 +86,7 @@ MEME.MemeCanvasView = Backbone.View.extend({
         ctx.shadowColor = "#666";
         ctx.shadowOffsetX = -2;
         ctx.shadowOffsetY = 1;
-        ctx.shadowBlur = 10;
+        ctx.shadowBlur = 5;
       }
 
       // Text alignment:
