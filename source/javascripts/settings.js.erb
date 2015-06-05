@@ -9,7 +9,7 @@ var MEME_SETTINGS = {
   fontFamily: 'Avenir Light',
   // Font family options: set to empty array to disable font selector.
   // These options may also be formatted as {text:'Knockout', value:'"Knockout 28 B"'}.
-  fontFamilyOpts: ['Avenir Light', 'Helvetica Neue', 'Comic Sans MS'],
+  fontFamilyOpts: ['Avenir Light', 'Helvetica Neue', 'Avenir Book'],
   
   // Font size of main headline:
   fontSize: 24,
@@ -47,7 +47,7 @@ var MEME_SETTINGS = {
   watermarkMaxWidthRatio: 0.25, // Maximum allowed width of watermark (percentage of total canvas width).
 
   // Path to the watermark image source, or blank for no watermark:
-  // Alternatively, use '<%= asset_data_uri("vox.png") %>' to populate the watermark with base64 data, avoiding Cross-Origin issues.
+  // Alternatively, use '<%= asset_data_uri("white.png") %>' to populate the watermark with base64 data, avoiding Cross-Origin issues.
   watermarkSrc: (localStorage && localStorage.getItem('meme_watermark')) || '<%= image_path("white.png") %>',
   
   // Watermark image options: set to empty array to disable watermark picker.

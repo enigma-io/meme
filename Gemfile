@@ -2,6 +2,9 @@
 # the following line to use "https"
 source 'http://rubygems.org'
 
+gem 'therubyracer'
+gem 'eventmachine',  github: "eventmachine/eventmachine"
+
 gem "middleman", "~>3.3.3"
 
 # Live-reloading plugin
