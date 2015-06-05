@@ -1,4 +1,4 @@
-# Enigma-Meme
+# Enigma Meme
 
 This is Enigma's version of Vox Media's [Meme](http://github.com/voxmedia/meme). See our deployed version [here](http://meme.enigmalabs.org).
 
