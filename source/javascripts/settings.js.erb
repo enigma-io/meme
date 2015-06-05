@@ -6,10 +6,10 @@ var MEME_SETTINGS = {
 
   // Universal font family for texts:
   // Note that you'll need to included quoted font names as you would in CSS, ie: '"Knockout 28 B"'.
-  fontFamily: 'Helvetica Neue',
+  fontFamily: 'Avenir Light',
   // Font family options: set to empty array to disable font selector.
   // These options may also be formatted as {text:'Knockout', value:'"Knockout 28 B"'}.
-  fontFamilyOpts: ['Arial', 'Helvetica Neue', 'Comic Sans MS'],
+  fontFamilyOpts: ['Avenir Light', 'Helvetica Neue', 'Comic Sans MS'],
   
   // Font size of main headline:
   fontSize: 24,
@@ -24,12 +24,12 @@ var MEME_SETTINGS = {
   height: 378, // Canvas rendering height.
   imageScale: 1, // Background image scale.
   imageSrc: '', // Default background image path. MUST reside on host domain, or use base64 data.
-  overlayAlpha: 0.5, // Opacity of image overlay.
+  overlayAlpha: 0.8, // Opacity of image overlay.
 
   // Image overlay color, or blank ('') for no overlay:
   overlayColor: '#000',
   // Overlay color options: set to empty array to disable overlay options selector.
-  overlayColorOpts: ['#000', '#777', '#2980b9'],
+  overlayColorOpts: ['#000', '#288cd2', '#eb3f25', '#00b495'],
   paddingRatio: 0.05, // Percentage of canvas width to use as edge padding.
   
   // Text alignment: valid settings are "left", "center", and "right".
@@ -48,14 +48,14 @@ var MEME_SETTINGS = {
 
   // Path to the watermark image source, or blank for no watermark:
   // Alternatively, use '<%= asset_data_uri("vox.png") %>' to populate the watermark with base64 data, avoiding Cross-Origin issues.
-  watermarkSrc: (localStorage && localStorage.getItem('meme_watermark')) || '<%= image_path("vox.png") %>',
+  watermarkSrc: (localStorage && localStorage.getItem('meme_watermark')) || '<%= image_path("white.png") %>',
   
   // Watermark image options: set to empty array to disable watermark picker.
   // NOTE: only populate the "data" attributes with base64 data when concerned about Cross-Origin requests...
   // Otherwise, just leave "data" attributes blank and allow images to load from your server.
   watermarkOpts: [
-    {text: 'Vox', value: '<%= image_path("vox.png") %>', data: '<%= asset_data_uri("vox.png") %>'},
-    {text: 'The Verge', value: '<%= image_path("theverge.png") %>', data: ''}
+    {text: 'White', value: '<%= image_path("white.png") %>', data: '<%= asset_data_uri("white.png") %>'},
+    {text: 'Black', value: '<%= image_path("black.png") %>', data: ''}
   ],
 
   width: 755 // Canvas rendering width.
