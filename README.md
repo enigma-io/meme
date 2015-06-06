@@ -2,13 +2,19 @@
 
 This is Enigma's version of Vox Media's [Meme](http://github.com/voxmedia/meme). See our deployed version [here](http://meme.enigmalabs.org).
 
-## Install
+## Install and run development server.
 
 * `git clone https://github.com/enigma-io/meme.git`
 * `bundle install`
 * `bundle exec middleman`
 
 This will start a local web server running at: `http://localhost:4567/`
+
+## Deploy to s3.
+
+Run `bundle exec middleman build` to bake out the files in `source` into static assets.
+
+Or run `./deploy.sh` which will bake the files and source and sync them on s3.
 
 ## Customization
 
