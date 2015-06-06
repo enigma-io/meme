@@ -14,7 +14,7 @@ This will start a local web server running at: `http://localhost:4567/`
 
 Run `bundle exec middleman build` to bake out the files in `source` into static assets.
 
-Or run `./deploy.sh` which will bake the files and source and sync them on s3.
+Or run `./deploy.sh` which will bake the files in  `/source` and sync them on s3.
 
 ## Customization
 
